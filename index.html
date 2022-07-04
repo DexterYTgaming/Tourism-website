@@ -17,8 +17,8 @@
   <section class="header-top">
     <div class="container">
       <div class="row">
-        <div class=" col-9 p-0 login_info_pg">
-          <ul>
+        <div class=" col-md-9 col-sm-9 col-xs-0 p-0 login_info_pg">
+          <ul id="list1">
             <!-- <img src="./images/icons/person2_icon.png" alt=""> -->
             <li><a href=""><i class="fa fa-male"></i> Agent Login</a></li>
             <li><a href=""><i class="fa fa-male"></i> Customer Login</a></li>
@@ -27,12 +27,12 @@
             <li><a href=""><i class="fa fa-phone"></i> Call us Now: 815-123-4567</a></li>
           </ul>
         </div>
-        <div class="col-3 p-0 login_info_pg">
-          <ul>
-            <li><a href=""><img src="./images/icons/facebook.png" alt=""></a></li>
-            <li><a href=""><img src="./images/icons/twitter.png" alt=""></a></li>
-            <li><a href=""><img src="./images/icons/linkedin.png" alt=""></a></li>
-            <li><a href=""><img src="./images/icons/instagram.png" alt=""></a></li>
+        <div class="col-md-3 col-sm-3 col-xs-12 p-0 login_info_pg">
+          <ul id="list2">
+            <li><a href=""><img src="./images/icons/icons8-facebook-64.png" alt=""></a></li>
+            <li><a href=""><img src="./images/icons/icons8-twitter-64.png" alt=""></a></li>
+            <li><a href=""><img src="./images/icons/icons8-linkedin-64.png" alt=""></a></li>
+            <li><a href=""><img src="./images/icons/icons8-instagram-64.png" alt=""></a></li>
           </ul>
         </div>
       </div>
@@ -116,7 +116,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 p-0">
-          <div class="owl-carousel owl-carousel1 owl-theme owl-loaded owl-drag ">
+          <div class="owl-carousel owl-carousel1 owl-theme owl-loaded owl-drag p-0 ">
             <div class="owl-stage-outer">
 
               <div class="owl-stage">
@@ -169,29 +169,40 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 p-0">
-          <p>find your</p>
-          <h4>holidays</h4>
+          <div class="bookings_pg">
+            <p>find your</p>
+            <h4>holidays</h4>
+          </div>
+
         </div>
         <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 p-0">
-          <h5>Where</h5>
+          <div class="bookings_pg"><h5>Where</h5></div>
+          
         </div>
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12  p-0">
           <div class="form-group">
-            <input type="text" class="form-control" id="text" aria-describedby="emailHelp" placeholder="Destination">
+            <div class="bookings_pg">
+              <input type="text" class="form-control" id="text" aria-describedby="emailHelp" placeholder="Destination">
+            </div>
           </div>
         </div>
         <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 p-0">
-          <h5>When</h5>
+          <div class="bookings_pg">
+            <h5>When</h5>
+          </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 p-0">
           <div class="form-group">
-            <input type="date" class="form-control" id="date" aria-describedby="date" placeholder="">
+            <div class="bookings_pg">
+              <input type="date" class="form-control" id="date" aria-describedby="date" placeholder="">
+            </div>           
           </div>
         </div>
         <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 p-0">
-          <button class="btn-primary search_button">Search</button>
+          <div class="bookings_pg">
+            <button class="btn-primary search_button">Search</button>
+          </div>
         </div>
-
       </div>
     </div>
 
@@ -502,16 +513,16 @@
             <div class="container">
               <div class="row">
                 <div class="col-lg-3 col-md-2 col-sx-6 col-3 p-0">
-                  <a href=""><img src="./images/icons/facebook.png" alt=""></a>
+                  <a href=""><img src="./images/icons/icons8-facebook-64.png" alt=""></a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sx-6 col-3 p-0">
-                  <a href=""><img src="./images/icons/instagram.png" alt=""></a>
+                  <a href=""><img src="./images/icons/icons8-instagram-64.png" alt=""></a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-3 col-sx-6 p-0">
-                  <a href=""><img src="./images/icons/linkedin.png" alt=""></a>
+                  <a href=""><img src="./images/icons/icons8-linkedin-64.png" alt=""></a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-3 col-sx-6 p-0">
-                  <a href=""><img src="./images/icons/twitter.png" alt=""></a>
+                  <a href=""><img src="./images/icons/icons8-twitter-64.png" alt=""></a>
                 </div>
               </div>
             </div>
@@ -565,6 +576,7 @@
       // items change number for slider display on desktop
       dots: false,
       loop: true,
+      center: true,
       margin: 10,
       autoplay: true,
       autoplayTimeout: 3000,
